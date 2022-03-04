@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Oswald:wght@600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../css/index.css" />
+    <title>Contact Us - Dark Side</title>
+  </head>
+  <body class="background__gradient">
+    <header>
+      <nav class="menu">
+        <a href="../../index.html"
+          ><img
+            src="../imágenes/index/moon_icon.png"
+            alt="icono luna"
+            class="menu__icon"
+        /></a>
+        <ul>
+          <li class="menu__item">
+            <a href="../../index.html" class="menu__item__index">Home</a>
+          </li>
+          <li class="menu__item">
+            <a href="artists.html" class="menu__item__artists">Artists</a>
+          </li>
+          <li class="menu__item">
+            <a href="events.html" class="menu__item__events">Events</a>
+          </li>
+          <li class="menu__item">
+            <a href="about_us.html" class="menu__item__aboutus">About Us</a>
+          </li>
+          <li class="menu__item">
+            <a href="contact.html" class="menu__item__contact">Contact</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section class="form">
+        <h1 class="form__title">Contact Us</h1>
+        <p class="form__subtitle">Arcu facilisi vitae venenatis magna.</p>
+        <form method="POST">
+          <input
+            type="text"
+            name="nombre"
+            placeholder="enter your name"
+            class="form__name"
+          />
+          <br />
+          <input
+            type="email"
+            name="email adress"
+            placeholder="enter your e-mail"
+            class="form__email"
+          />
+          <br />
+          <textarea
+            name="message"
+            placeholder="enter your message"
+            class="form__message"
+          ></textarea>
+          <br />
+          <input type="submit" value="Enviar" class="form__send" />
+        </form>
+      </section>
+      <img
+        src="../imágenes/contact/PostalesDarkSide.png"
+        alt="pila de sobres"
+        class="form__image"
+      />
+    </main>
+
+    <footer class="footer footer__contact">
+      <p class="footer__instagram__text">follow us on Instagram</p>
+      <img
+        src="../imágenes/index/instagram_icon.png"
+        alt="icono de instagram"
+        class="footer__instagram__icon"
+      />
+      <p class="footer__spotify__text">our playlist on spotify</p>
+      <img
+        src="../imágenes/index/spotify_icon.png"
+        alt="icono de spotify"
+        class="footer__spotify__icon"
+      />
+    </footer>
+  </body>
+</html>
