@@ -16,32 +16,32 @@
   <body class="background--black">
     <header>
       <nav class="menu">
-        <a href="../../index.html"
+        <a href="../../index.html" class="menu__icon"
           ><img
             src="../imágenes/index/moon_icon.png"
             alt="icono luna"
-            class="menu__icon"
+            class="menu__icon__image"
         /></a>
-        <ul>
-          <li class="menu__item">
-            <a href="../../index.html" class="menu__item__index">Home</a>
+        <ul class="menu__list">
+          <li class="menu__list__item">
+            <a href="../../index.html" class="menu__list__item__link">Home</a>
           </li>
-          <li class="menu__item">
-            <a href="artists.html" class="menu__item__artists">Artists</a>
+          <li class="menu__list__item">
+            <a href="artists.html" class="menu__list__item__link">Artists</a>
           </li>
-          <li class="menu__item">
-            <a href="events.html" class="menu__item__events">Events</a>
+          <li class="menu__list__item">
+            <a href="events.html" class="menu__list__item__link">Events</a>
           </li>
-          <li class="menu__item">
-            <a href="about_us.html" class="menu__item__aboutus">About Us</a>
+          <li class="menu__list__item">
+            <a href="about_us.html" class="menu__list__item__link">About Us</a>
           </li>
-          <li class="menu__item">
-            <a href="contact.html" class="menu__item__contact">Contact</a>
+          <li class="menu__list__item">
+            <a href="contact.html" class="menu__list__item__link">Contact</a>
           </li>
         </ul>
       </nav>
     </header>
-    <main class="events--flex">
+    <main class="events--grid">
       <section class="events__bloque-1">
         <h2 class="events__bloque-1__title" >Dwell in Other Futures</h2>
         <p class="events__bloque-1__text-1" >April 22 2022</p>
@@ -52,22 +52,26 @@
       <section class="events__bloque-2">
         <h2 class="events__bloque-2__title" >Dwell in Other Futures</h2>
         <p class="events__bloque-2__text-1" >Today 23.00 - 03.00</p>
-        <img src="../imágenes/events/arrow-1.png" alt="flecha 1"  class="events__bloque-2__arrow-1" />
-        <h3 class="events__bloque-2__text-2" >Inside</h3>
-        <p class="events__bloque-2__text-3" >
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Enim varius
-          ullamcorper commodo tempus. Mauris.
-        </p>
-        <h3 class="events__bloque-2__text-4" >Outside</h3>
-        <img src="../imágenes/events/arrow-2.png" alt="flecha 2"  class="events__bloque-2__arrow-2" />
-        <p class="events__bloque-2__text-5" >
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Enim varius
-          ullamcorper commodo tempus. Mauris.
-        </p>
+        <div>
+          <img src="../imágenes/events/arrow-1.png" alt="flecha 1"  class="events__bloque-2__arrow-1" />
+          <h3 class="events__bloque-2__text-2" >Inside</h3>
+          <p class="events__bloque-2__text-3" >
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Enim varius
+            ullamcorper commodo tempus. Mauris.
+          </p>
+        </div>
+        <div>
+          <h3 class="events__bloque-2__text-4" >Outside</h3>
+          <img src="../imágenes/events/arrow-2.png" alt="flecha 2"  class="events__bloque-2__arrow-2" />
+          <p class="events__bloque-2__text-5" >
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Enim varius
+            ullamcorper commodo tempus. Mauris.
+          </p>
+        </div>
       </section>
 
       <section class="events__bloque-3">
-        <article>
+        <article class="background--blue__1">
           <p class="events__bloque-3__text-1" >8pm</p>
           <h3 class="events__bloque-3__title-1" >Art/Urban/Westside</h3>
           <p class="events__bloque-3__text-2" >
@@ -77,7 +81,7 @@
             amet, convallis at. Ornare faucibus diam viverra dignissim faucibus
             massa.
           </p>
-        <article>
+        <article class="background--blue__2">
           <p class="events__bloque-3__text-3" >8pm</p>
           <h3 class="events__bloque-3__title-2" >Art/Urban/Westside</h3>
           <p class="events__bloque-3__text-4" > Lorem ipsum dolor sit amet, consectetur adipiscing elit. Et eget
@@ -129,17 +133,17 @@
         <img
           src="../imágenes/events/bloque_7_1-3.png"
           alt="patron abstracto 1"
-          class="events__bloque-7__image-1"
+          class="events__bloque-7__image"
         />
         <img
           src="../imágenes/events/bloque_7_2-3.png"
           alt="patron abstracto 2"
-          class="events__bloque-7__image-2"
+          class="events__bloque-7__image"
         />
         <img
           src="../imágenes/events/bloque_7_3-3.png"
           alt="patron abstracto 3"
-          class="events__bloque-7__image-3"
+          class="events__bloque-7__image"
         />
       </section>
     </main>
