@@ -1,0 +1,410 @@
+/*estilos de EVENTS*/
+.events {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  grid-template-areas:
+    "one one two "
+    "three three four"
+    "five six seven";
+  width: 100%;
+  justify-content: center;
+  grid-gap: 1.25rem;
+  &__bloque-1 {
+    grid-area: one;
+    height: 31.25rem;
+    width: 62.5rem;
+    background-image: url(../imágenes/events/bloque-1.png);
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    &__title {
+      font-family: "Montserrat", sans-serif;
+      font-size: 5rem;
+      margin: 2.5rem;
+      text-align: center;
+    }
+    &__text-1 {
+      font-family: "Montserrat", sans-serif;
+      font-size: 2.5rem;
+    }
+    &__text-2 {
+      font-family: "Montserrat", sans-serif;
+      font-size: 2.5rem;
+    }
+    &__text-3 {
+      font-family: "Montserrat", sans-serif;
+      font-size: 2.5rem;
+    }
+  }
+  &__bloque-2 {
+    grid-area: two;
+    height: 31.25rem;
+    width: 19rem;
+    background-color: #f6430d;
+    display: flex;
+    justify-content: space-around;
+    flex-flow: row wrap;
+    &__title {
+      font-family: "Montserrat", sans-serif;
+      font-size: 3.75rem;
+      text-align: center;
+      line-height: 3.75rem;
+    }
+    &__text-1 {
+      font-family: "Montserrat", sans-serif;
+      font-size: 0.938rem;
+      text-align: center;
+      font-weight: 1000;
+      margin-bottom: 1.25rem;
+    }
+    &__text-2 {
+      font-family: "Oswald", sans-serif;
+      font-size: 2.813rem;
+      position: relative;
+      bottom: 1.875rem;
+    }
+    &__text-3 {
+      font-family: "Montserrat", sans-serif;
+      font-size: 0.938rem;
+      font-weight: 1000;
+      text-align: center;
+      position: relative;
+      bottom: 2.5rem;
+      width: 15.625rem;
+    }
+    &__text-4 {
+      font-family: "Oswald", sans-serif;
+      font-size: 2.813rem;
+      position: relative;
+      bottom: 1.875rem;
+    }
+    &__text-5 {
+      font-family: "Montserrat", sans-serif;
+      font-size: 0.938rem;
+      font-weight: 1000;
+      text-align: center;
+      position: relative;
+      bottom: 2.5rem;
+      width: 15.625rem;
+    }
+  }
+  &__bloque-3 {
+    grid-area: three;
+    height: 31.25rem;
+    width: 62.5rem;
+    background-color: #2c599d;
+    &__bg {
+      background-color: #f6430d;
+      position: relative;
+      top: 50px;
+    }
+    &__text-1 {
+      margin: 5px;
+      border-bottom: solid black 2px;
+      font-family: "Montserrat", sans-serif;
+      font-size: 10px;
+      font-weight: 1000;
+      padding: 5px;
+    }
+    &__title-1 {
+      font-family: "Montserrat", sans-serif;
+      font-size: 25px;
+      margin: 10px;
+    }
+    &__text-2 {
+      font-family: "Montserrat", sans-serif;
+      font-size: 15px;
+      font-weight: 1000;
+      padding: 5px;
+      margin-bottom: 33px;
+    }
+    &__text-3 {
+      margin: 5px;
+      border-bottom: solid black 2px;
+      font-family: "Montserrat", sans-serif;
+      font-size: 10px;
+      font-weight: 1000;
+      padding: 5px;
+    }
+    &__title-2 {
+      font-family: "Montserrat", sans-serif;
+      font-size: 25px;
+      margin: 10px;
+    }
+    &__text-4 {
+      font-family: "Montserrat", sans-serif;
+      font-size: 15px;
+      font-weight: 1000;
+      padding: 5px;
+    }
+    &__text-5 {
+      margin: 5px;
+      border-bottom: solid black 2px;
+      font-family: "Montserrat", sans-serif;
+      font-size: 10px;
+      font-weight: 1000;
+      padding: 5px;
+    }
+    &__title-3 {
+      font-family: "Montserrat", sans-serif;
+      font-size: 20px;
+      margin: 17px;
+    }
+    &__contenedor--flexwrap {
+      display: flex;
+      justify-content: space-around;
+    }
+    &__text-6 {
+      font-family: "Montserrat", sans-serif;
+      font-size: 25px;
+      font-weight: 1000;
+      padding: 5px;
+    }
+    &__text-7 {
+      font-family: "Montserrat", sans-serif;
+      font-size: 25px;
+      font-weight: 1000;
+      padding: 5px;
+    }
+    &__text-8 {
+      font-family: "Montserrat", sans-serif;
+      font-size: 25px;
+      font-weight: 1000;
+      padding: 5px;
+    }
+  }
+  &__bloque-4 {
+    grid-area: four;
+    height: 31.25rem;
+    width: 19rem;
+    background-image: url(../imágenes/events/bloque-4.png);
+    display: flex;
+    justify-content: space-around;
+    flex-flow: row wrap;
+    &__title {
+      font-family: "Montserrat", sans-serif;
+      font-size: 60px;
+      text-align: center;
+      line-height: 50px;
+      margin: 20px;
+    }
+    &__text-1 {
+      font-family: "Montserrat", sans-serif;
+      font-size: 30px;
+      font-weight: 1000;
+      padding: 5px;
+    }
+    &__text-2 {
+      font-family: "Montserrat", sans-serif;
+      font-size: 50px;
+      text-align: center;
+      margin: 20px;
+    }
+  }
+  &__bloque-5 {
+    grid-area: five;
+    height: 31.25rem;
+    width: 30.625rem;
+    background-color: #2c599d;
+    &__title {
+      font-family: "Montserrat", sans-serif;
+      font-size: 60px;
+      text-align: center;
+      line-height: 60px;
+      padding: 15px;
+    }
+    &__text-1 {
+      font-family: "Montserrat", sans-serif;
+      font-size: 25px;
+      font-weight: 1000;
+      padding: 5px;
+      text-align: center;
+    }
+    &__text-2 {
+      font-family: "Montserrat", sans-serif;
+      font-size: 25px;
+      font-weight: 1000;
+      text-align: center;
+      margin-top: 30px;
+    }
+  }
+  &__bloque-6 {
+    grid-area: six;
+    height: 31.25rem;
+    width: 30.625rem;
+    background-color: #2c599d;
+    display: flex;
+    align-items: center;
+    &__image {
+      height: 31.25rem;
+      width: 15.312rem;
+    }
+    &__text {
+      font-family: "Montserrat", sans-serif;
+      font-size: 30px;
+      font-weight: 1000;
+      text-align: center;
+    }
+  }
+
+  &__bloque-7 {
+    grid-area: seven;
+    height: 31.25rem;
+    width: 19rem;
+    display: flex;
+    justify-content: space-between;
+    height: 31.25rem;
+  }
+}
+// MEDIAQUERIES
+@media screen and (max-width: 768px) {
+  .events {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    &__bloque-1 {
+      height: 12rem;
+      width: 20em;
+      &__title {
+        font-size: 30px;
+        margin: 5px;
+      }
+      &__text-1 {
+        font-size: 20px;
+      }
+
+      &__text-2 {
+        font-size: 20px;
+      }
+
+      &__text-3 {
+        font-size: 20px;
+      }
+    }
+    &__bloque-2 {
+      height: 12rem;
+      width: 20em;
+      &__title {
+        font-size: 30px;
+        line-height: 30px;
+      }
+      &__text-1 {
+        font-size: 10px;
+        width: 100%;
+      }
+      &__text-2 {
+        font-size: 30px;
+        position: relative;
+        bottom: 30px;
+        text-align: right;
+        margin: 10px;
+      }
+      &__text-3 {
+        font-size: 10px;
+        font-weight: 1000;
+        width: 150px;
+        text-align: right;
+      }
+      &__text-4 {
+        font-size: 30px;
+        position: relative;
+        bottom: 30px;
+        text-align: left;
+        margin: 10px;
+      }
+      &__text-5 {
+        font-size: 10px;
+        font-weight: 1000;
+        width: 150px;
+        text-align: left;
+      }
+    }
+    &__bloque-3 {
+      height: 12rem;
+      width: 20em;
+      &__bg {
+        display: none;
+        &__mobile{
+          background-color: $secondary;
+        }
+      }
+      &__text-1 {
+        margin: 1px;
+        font-size: 5px;
+        padding: 2px;
+      }
+      &__title-1 {
+        font-size: 12px;
+        margin: 2px;
+      }
+      &__text-2 {
+        font-size: 10px;
+        padding: 0px;
+        margin-bottom: 0px;
+      }
+      &__text-3 {
+        margin: 1px;
+        font-size: 5px;
+        padding: 2px;
+      }
+      &__title-2 {
+        font-size: 12px;
+        margin: 2px;
+      }
+      &__text-4 {
+        font-size: 10px;
+        padding: 0px;
+        margin-bottom: 0px;
+      }
+    }
+    &__bloque-4 {
+      display: none;
+    }
+    &__bloque-5 {
+      height: 12rem;
+      width: 20em;
+      background-image: url(../imágenes/events/bloque-6.png);
+      &__title {
+        font-size: 30px;
+        line-height: 30px;
+        padding: 10px;
+        background-color: #2c599d;
+        width: 15rem;
+        position: relative;
+        left: 40px;
+      }
+
+      &__text-1 {
+        font-size: 15px;
+        padding: 5px;
+        background-color: #2c599d;
+        width: 15rem;
+        position: relative;
+        left: 40px;
+      }
+      &__text-2 {
+        font-size: 10px;
+        margin-top: 0px;
+        background-color: #2c599d;
+        width: 15rem;
+        position: relative;
+        left: 40px;
+        padding-bottom: 5px;
+      }
+    }
+    &__bloque-6 {
+      display: none;
+    }
+    &__bloque-7 {
+      height: 12rem;
+      width: 20em;
+      display: flex;
+      justify-content: space-between;
+      &__image {
+        height: 11rem;
+        width: 3rem;
+      }
+    }
+  }
+}

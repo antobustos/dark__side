@@ -1,0 +1,18 @@
+/*reset*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  /*backgrounds colors*/
+  .background__gradient {
+    background: radial-gradient(
+        50% 50% at 50% 50%,
+        #f56311 0%,
+        rgba(245, 99, 17, 0) 100%
+      ),
+      linear-gradient(0deg, hsl(223, 64%, 18%), #11224d);
+  }
+  .background--black {
+    background-color: rgb(0, 0, 0);
+  }

@@ -1,0 +1,167 @@
+
+/*estilos contact*/
+.contact {
+    display: flex;
+    margin: 50px 0px;
+    justify-content: space-around;
+    align-items: center;
+    .form {
+      height: 500px;
+      width: 550px;
+      border-radius: 50px;
+      background-color: rgba(0, 0, 0, 0.5);
+      z-index: 10;
+      position: relative;
+      left: 200px;
+      display: flex;
+      flex-direction: column;
+      &__image {
+        height: 550px;
+        position: relative;
+        right: 60px;
+        z-index: 5;
+      }
+      &__title {
+        font-family: "Oswald", sans-serif;
+        font-size: 40px;
+        text-align: center;
+        letter-spacing: 3px;
+        color: white;
+        margin: 30px 0px 10px 0px;
+      }
+      &__subtitle {
+        font-family: "Montserrat", sans-serif;
+        font-size: 15px;
+        color: white;
+        text-align: center;
+        letter-spacing: 3px;
+        margin: 15px 30px;
+      }
+      
+      &__name {
+        border-radius: 20px;
+        border-style: none;
+        background-color: rgba(0, 0, 0, 0.5);
+        padding: 10px;
+        font-family: "Montserrat", sans-serif;
+        font-size: 15px;
+        width: 450px;
+        margin: 10px;
+      }
+      
+      &__email {
+        border-radius: 20px;
+        border-style: none;
+        background-color: rgba(0, 0, 0, 0.5);
+        padding: 10px;
+        font-family: "Montserrat", sans-serif;
+        font-size: 15px;
+        width: 450px;
+        margin: 10px;
+      }
+      
+      &__message {
+        border-radius: 20px;
+        border-style: none;
+        background-color: rgba(0, 0, 0, 0.5);
+        padding: 10px;
+        font-family: "Montserrat", sans-serif;
+        font-size: 15px;
+        width: 450px;
+        height: 150px;
+        margin: 10px;
+      }
+      
+      &__send {
+        border-radius: 10px;
+        border-style: none;
+        background-color: black;
+        color: white;
+        font-family: "Montserrat", sans-serif;
+        font-size: 15px;
+        padding: 10px 30px;
+        margin-bottom: 15px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+      }    
+    }
+  }
+// MEDIAQUERIES
+  @media screen and (max-width: 768px) {
+    .contact {
+      display: flex;
+      flex-direction: column;
+      margin: 50px 0px;
+      justify-content: space-around;
+      align-items: center;
+      .form {
+        height: 450px;
+        width: 320px;
+        border-radius: 30px;
+        left: 0px;
+        display: flex;
+        flex-direction: column;
+        &__image {
+          height: 300px;
+          position: relative;
+          right: 0px;
+        }
+        &__title {
+          font-size: 30px;
+        }
+      
+        &__subtitle {
+          font-size: 12px;
+          margin: 5px 5px;
+        }
+      
+        &__name {
+          border-radius: 15px;
+          background-color: rgba(0, 0, 0, 0.5);
+          font-size: 15px;
+          width: 280px;
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+          margin-top: 0px;
+          margin-bottom: 0px;
+        }
+      
+        &__email {
+          border-radius: 15px;
+          background-color: rgba(0, 0, 0, 0.5);
+          font-size: 15px;
+          width: 280px;
+          display: block;
+          margin-top: 0px;
+          margin-bottom: 0px;
+          margin-left: auto;
+          margin-right: auto;
+        }
+      
+        &__message {
+          border-radius: 15px;
+          background-color: rgba(0, 0, 0, 0.5);
+          font-size: 15px;
+          width: 280px;
+          display: block;
+          margin-top: 0px;
+          margin-bottom: 0px;
+          margin-left: auto;
+          margin-right: auto;
+          height: 120px;
+        }
+      
+        &__send {
+          border-radius: 10px;
+          font-size: 15px;
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+          margin-top: 0px;
+          margin-bottom: 150px;
+        }
+      }
+    }
+  }

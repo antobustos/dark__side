@@ -1,0 +1,277 @@
+/*estilos de INDEX*/
+.index {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-content: space-around;
+}
+.title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  width: 100%;
+  &__name {
+    display: flex;
+    &__dark {
+      font-family: $font-primary;
+      font-size: 14rem;
+      font-style: normal;
+      text-align: center;
+      letter-spacing: 0.1em;
+    }
+    &__side {
+      font-family: $font-primary;
+      font-size: 14rem;
+      font-style: normal;
+      text-align: center;
+      letter-spacing: 0.1em;
+      color: transparent;
+      -webkit-text-stroke: 0.125rem #000000;
+    }
+  }
+  &__birthday {
+    font-family: $font-secondary;
+    font-size: 1.5rem;
+    font-weight: 800;
+    line-height: 2.063rem;
+    text-align: center;
+  }
+  &__date {
+    font-family: $font-secondary;
+    font-size: 1.5rem;
+    font-weight: 800;
+    font-style: normal;
+    line-height: 2.063rem;
+    text-align: center;
+    padding: 0.313rem 0.625 0.313rem 0.625;
+    background-color: transparent;
+    border: #000000 solid 0.094rem;
+    border-radius: 2188rem;
+    width: 15.625rem;
+  }
+}
+.event {
+  display: flex;
+  justify-content: space-around;
+  &__coming {
+    font-size: 16.25rem;
+    width: 25rem;
+    overflow-wrap: break-word;
+    line-height: 15.625rem;
+    color: transparent;
+    -webkit-text-stroke: 0.125rem #000000;
+    font-family: $font-primary;
+  }
+  &__image {
+    height: 43.75rem;
+    align-self: center;
+  }
+  &__text {
+    width: 43.75rem;
+    height: 43.75rem;
+    display: grid;
+    grid-template-columns: repeat(3 1fr);
+    grid-template-rows: repeat(12 1fr);
+    position: absolute;
+    top: 34.375rem;
+    right: 2.5rem;
+    &__item {
+      padding: 0.313rem;
+      width: 9.375;
+      height: 3.125rem;
+      margin-bottom: 1.25rem;
+      font-family: $font-secondary;
+      font-size: 1.25rem;
+      font-weight: 800;
+      line-height: 2.188rem;
+      text-align: center;
+    }
+    &__1 {
+      grid-column: 1/1;
+      grid-row: 1/1;
+      background-color: #000000;
+      color: white;
+      border: black solid 0.094rem;
+      border-radius: 1.25rem;
+    }
+    &__2 {
+      grid-column: 1/1;
+      grid-row: 2/2;
+      background-color: transparent;
+      border: white solid 0.094rem;
+      color: white;
+      border-radius: 1.25rem;
+    }
+    &__3 {
+      grid-column: 1/1;
+      grid-row: 3/3;
+      background-color: white;
+      border: white solid 0.094rem;
+      border-radius: 1.25rem;
+    }
+    &__4 {
+      grid-column: 1/1;
+      grid-row: 4/4;
+      background-color: white;
+      border: white solid 0.094rem;
+      border-radius: 1.25rem;
+    }
+    &__5 {
+      grid-column: 2/2;
+      grid-row: 12/12;
+      color: white;
+      font-family: $font-secondary;
+      font-size: 1.563rem;
+      font-weight: 500;
+      font-style: normal;
+      position: relative;
+      left: 3.125rem;
+      &__button {
+        grid-column: 3/3;
+        grid-row: 12/12;
+        border: white solid 0.094rem;
+        height: 6.25rem;
+        width: 6.25rem;
+        padding: 2.188rem;
+        border-radius: 6.25rem;
+        color: white;
+        font-family: $font-secondary;
+        font-size: 1.563rem;
+        font-weight: 800;
+        font-style: normal;
+        text-align: center;
+        position: relative;
+        bottom: 2.5rem;
+      }
+    }
+  }
+}
+/*INFORMATION*/
+.information {
+  height: 37.5rem;
+  width: 75rem;
+  border-radius: 3.125rem;
+  background-color: rgba(0, 0, 0, 0.5);
+  align-self: center;
+  margin: 6.25rem;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  &__article {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 18.75rem;
+  }
+  &__icon {
+    opacity: 100%;
+    color: white;
+  }
+  &__subtitle {
+    font-family: "Oswald", sans-serif;
+    font-size: 3.75rem;
+    color: white;
+  }
+  &__text {
+    font-family: "Montserrat", sans-serif;
+    font-size: 1.25rem;
+    color: white;
+    text-align: center;
+  }
+}
+// MEDIA QUERIES
+@media screen and (max-width: 768px) {
+  .title {
+    height: 28.125rem;
+    &__name {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      margin-bottom: 3.125rem;
+      &__dark {
+        font-size: 8rem;
+        height: 8.125rem;
+        -webkit-text-stroke: 0.094rem #000000;
+      }
+      &__side {
+        font-size: 8rem;
+        height: 8.125rem;
+        -webkit-text-stroke: 0.094rem #000000;
+      }
+    }
+    &__birthday {
+      font-size: 1rem;
+    }
+    &__date {
+      font-size: 1rem;
+      width: 10em;
+    }
+  }
+  .event {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 25rem;
+    &__coming {
+      font-size: 5.5rem;
+      text-align: center;
+      height: 12.5rem;
+      -webkit-text-stroke: 0.075rem #000000;
+    }
+    &__image {
+      height: 18.75rem;
+    }
+    &__text {
+      width: 17.5rem;
+      height: 19.313rem;
+      position: absolute;
+      top: 45rem;
+      right: 2.125rem;
+      &__item {
+        padding: 0rem;
+        width: 5.625rem;
+        height: 2.5rem;
+        font-size: 0.8rem;
+      }
+      &__5 {
+        font-size: 0.8rem;
+        position: relative;
+        left: 3.125rem;
+        bottom: 1.875rem;
+        &__button {
+          padding: 0.625rem;
+          border-radius: 6.25rem;
+          font-size: 1rem;
+          width: 3.125rem;
+          height: 3.125rem;
+          font-weight: 800;
+          font-style: normal;
+          text-align: center;
+          position: relative;
+          bottom: 2.5rem;
+        }
+      }
+    }
+  }
+  .information {
+    height: 61.25rem;
+    width: 18.75rem;
+    flex-direction: column;
+    border-radius: 1.563rem;
+    margin: 4.375rem;
+    &__text {
+      font-size: 1rem;
+      width: 15.625rem;
+    }
+    &__subtitle {
+      font-size: 2rem;
+      width: 15.625rem;
+      text-align: center;
+    }
+    &__icon {
+      height: 5rem;
+    }
+  }
+}

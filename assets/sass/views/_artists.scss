@@ -1,0 +1,112 @@
+/*estilos del ARTISTS*/
+.artists {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    &__title {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: repeat(2, 1fr);
+      grid-template-areas:
+        "dark side"
+        "art ists";
+      width: 62.5rem;
+      justify-content: center;
+      margin-bottom: 3.125rem;
+      &__dark {
+        grid-area: dark;
+        font-family: "Oswald", sans-serif;
+        font-size: 11rem;
+        font-style: normal;
+        text-align: center;
+        letter-spacing: 0.1em;
+      }
+      &__side{
+        grid-area: side;
+        font-family: "Oswald", sans-serif;
+        font-size: 11rem;
+        font-style: normal;
+        text-align: center;
+        letter-spacing: 0.1em;
+        color: transparent;
+        -webkit-text-stroke: 0.125rem #000000;
+      }
+      &__art{
+        grid-area: art;
+        font-family: "Oswald", sans-serif;
+        font-size: 11rem;
+        font-style: normal;
+        text-align: center;
+        letter-spacing: 0.1em;
+      }
+      &__ists{
+        grid-area: ists;
+        font-family: "Oswald", sans-serif;
+        font-size: 11rem;
+        font-style: normal;
+        text-align: center;
+        letter-spacing: 0.1em;
+        color: transparent;
+        -webkit-text-stroke: 0.125rem #000000;
+      }
+    }
+    &__profiles {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      &__1 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 3.125rem;
+      }
+      &__2 {
+        @extend .artists__profiles__1
+      }
+      &__3 {
+        @extend .artists__profiles__1
+      }
+      &__4 {
+        @extend .artists__profiles__1
+      }
+      &__name {
+        font-family: "Oswald", sans-serif;
+        font-size: 4.375rem;
+      }
+      &__subtitle {
+        font-family: "Montserrat", sans-serif;
+        font-size: 1.563rem;
+        font-weight: 800;
+      }
+    }
+  }
+  // MEDIAQUERIES
+  @media screen and (max-width: 768px) {
+    .artists__title {
+      width: 100%;
+      margin-bottom: 2em;
+      &__dark {
+        font-size: 4.2rem;
+      }
+      &__side {
+        font-size: 4.2rem;
+        -webkit-text-stroke: 0.075rem #000000;
+      }
+      &__art {
+        font-size: 4.2rem;
+      }
+      &__ists {
+        font-size: 4.2rem;
+        -webkit-text-stroke: 0.075rem #000000;
+      }
+    }
+    .artists__profiles__images {
+      height: 18em;
+    }
+    .artists__profiles__name {
+      font-size: 3rem;
+    }
+    .artists__profiles__subtitle {
+      font-size: 1.5rem;
+    }
+  }

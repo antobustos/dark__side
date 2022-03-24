@@ -1,0 +1,58 @@
+/*estilos del HEADER*/
+.menu {
+    background-color: $principal;
+    height: 5rem;
+    width: 100%;
+    display: flex;
+    &__icon {
+      display: flex;
+      &__image {
+      align-self: center;
+      padding: 0rem 1.25rem;
+      }
+    }
+    &__list {
+      height: 5rem;
+      width: 100%;
+      display: flex;
+      justify-content: flex-end;
+      &__item {
+        display: flex;
+        &:hover{
+          background-color: rgb(32, 32, 32);
+        }
+        &__link {
+          font-family: $font-secondary;
+          font-size: 1em;
+          text-align: center;
+          color: white;
+          text-decoration: none;
+          align-self: center;
+          margin: 0rem 1.25rem;
+          transition: background-color 1s;
+          &--text-decoration{
+            text-decoration: underline;
+          }
+        }
+      }
+    }
+  }
+  @media screen and (max-width: 768px) {
+    .menu {
+      height: 6rem;
+      &icon__image {
+        height: 5rem;
+        padding: 1em;
+      }
+      &__list {
+        height: 6rem;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        &__item__link {
+          font-size: 1.2em;
+          margin: 0.1em 0.5em;
+        }
+      }
+    }
+  }
