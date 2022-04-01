@@ -1,6 +1,6 @@
 /*estilos del HEADER*/
 .menu {
-    background-color: $principal;
+    background-color: black;
     height: 5rem;
     width: 100%;
     display: flex;
@@ -9,6 +9,8 @@
       &__image {
       align-self: center;
       padding: 0rem 1.25rem;
+      height: 42px;
+      width: 82px;
       }
     }
     &__list {

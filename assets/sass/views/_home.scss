@@ -64,7 +64,8 @@
     font-family: $font-primary;
   }
   &__image {
-    height: 43.75rem;
+    height: 700px;
+    width: 700px;
     align-self: center;
   }
   &__text {
@@ -168,6 +169,8 @@
   &__icon {
     opacity: 100%;
     color: white;
+    height: 100px;
+    width: 100px;
   }
   &__subtitle {
     font-family: "Oswald", sans-serif;
@@ -222,6 +225,7 @@
     }
     &__image {
       height: 18.75rem;
+      width: 18.75rem;
     }
     &__text {
       width: 17.5rem;
@@ -272,6 +276,7 @@
     }
     &__icon {
       height: 5rem;
+      width: 5rem;
     }
   }
 }

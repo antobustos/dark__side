@@ -1,0 +1,7 @@
+// MIXIN PARA PARRAFOS DE EVENTS
+@mixin parrafos ($size) {
+    font-family: "Montserrat", sans-serif;
+    font-size: $size;
+    color: black;
+    padding: 5px;
+}

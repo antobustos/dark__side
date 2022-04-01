@@ -1,6 +1,6 @@
 /*estilos del FOOTER*/
 .footer {
-  background-color: $principal;
+  background-color: black;
   height: 6.25rem;
   width: 100%;
   display: flex;
@@ -29,6 +29,9 @@
       font-size: 1.4em;
       color: white;
     }
+  }
+  &__icon {
+    height: 50px;
   }
 }
 

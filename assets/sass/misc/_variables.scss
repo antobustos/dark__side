@@ -1,4 +1,15 @@
-$principal: #000000;
-$secondary: #f56311;
 $font-primary: "Oswald", sans-serif;
 $font-secondary: "Montserrat", sans-serif;
+
+$color: (
+    "principal": #f56311 ,
+    "secondary": #2c599d,
+    "text-bg-dark":black,
+    "text-bg-light": white,
+);
+
+@each $name-color, $bgcolor in $color{
+    .color--#{$name-color} {
+        background-color: $bgcolor;
+    }
+}
